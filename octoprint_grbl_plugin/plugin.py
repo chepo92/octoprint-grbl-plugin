@@ -16,10 +16,13 @@ def unsupported_commands(comm_instance, phase, cmd, cmd_type, gcode, *args, **kw
     if cmd == 'M400':
         # Finishes all current moves and and thus clears the buffer.
         # That's identical to G4 P0.
-        return 'G4 P0'
+        return 'G4 P0'#'M400' #'$RST' #
     if cmd == 'M114':
         # Get current position
         return '?'
+    if cmd == 'M115':
+        # Get current position
+        return '?$G'
 
 
 def translate_ok(comm_instance, line, *args, **kwargs):
