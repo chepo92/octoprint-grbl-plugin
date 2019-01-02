@@ -13,8 +13,13 @@ pip install octoprint-grbl-plugin
 
 ## Required Configuration
 
-- _Serial Connection_ > _Advanced options_ > _"Hello" command_ = **M5**
-- _Features_ > _Send a checksum with the command_ > **Never**
+- _Serial Connection_ > _Firmware & Protocol_ > _Disable automatic firmware detection **(Unchecked)**
+- _Serial Connection_ > _Firmware & Protocol_ > _Send a checksum with the command_ > **Never**
+- _Serial Connection_ > _Firmware & Protocol_ > _Advanced options_ > _"Hello" command_ = **M5**
+
+- _GCODE Scriptss_ > **(Comment all with ';')**
+- _Features_ > **Uncheck all**
+
 
 
 ## Additional controls
